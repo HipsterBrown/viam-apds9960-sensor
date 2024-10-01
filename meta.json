@@ -1,0 +1,14 @@
+{
+  "$schema": "https://dl.viam.dev/module.schema.json",
+  "module_id": "hipsterbrown:apds9960-sensor",
+  "visibility": "public",
+  "url": "",
+  "description": "Modular sensor component: apds9960",
+  "models": [
+    {
+      "api": "rdk:component:sensor",
+      "model": "hipsterbrown:apds9960-sensor:apds9960"
+    }
+  ],
+  "entrypoint": "./run.sh"
+}

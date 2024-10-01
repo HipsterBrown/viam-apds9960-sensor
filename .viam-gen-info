@@ -1,0 +1,12 @@
+{
+  "module_name": "apds9960-sensor",
+  "namespace": "hipsterbrown",
+  "language": "python",
+  "resource_type": "component",
+  "resource_subtype": "sensor",
+  "model_name": "apds9960",
+  "enable_cloud_build": false,
+  "initialize_git": true,
+  "generator_version": "0.1.0",
+  "generated_on": "2024-10-01T15:57:08.823935Z"
+}
