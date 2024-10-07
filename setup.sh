@@ -29,6 +29,18 @@ if ! python3 -m venv $VENV_NAME >/dev/null 2>&1; then
   fi
 fi
 
+if ! apt info python3-venv >/dev/null 2>&1; then
+  echo "Package info not found, trying apt update"
+  $SUDO apt -qq update >/dev/null
+fi
+$SUDO apt install -qqy python3-libgpiod >/dev/null 2>&1
+
+export LINK_SYSTEM_LIBGPIOD=1
+if ! $PYTHON -m pip install gpiod -qq; then
+  echo "Unable to install required libgpiod Python bindings."
+  exit 1
+fi
+
 # remove -U if viam-sdk should not be upgraded whenever possible
 # -qq suppresses extraneous output from pip
 echo "Virtualenv found/created. Installing/upgrading Python packages..."
