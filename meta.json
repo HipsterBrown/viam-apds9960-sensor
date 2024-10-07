@@ -2,7 +2,7 @@
   "$schema": "https://dl.viam.dev/module.schema.json",
   "module_id": "hipsterbrown:apds9960",
   "visibility": "public",
-  "url": "",
+  "url": "https://github.com/HipsterBrown/viam-apds9960-sensor",
   "description": "Modular sensor component: apds9960 gesture, proxity, and color detection",
   "build": {
     "build": "mise run package",
