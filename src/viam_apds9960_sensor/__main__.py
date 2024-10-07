@@ -40,9 +40,7 @@ class SensorConfig(BaseModel):
 
 
 class Apds9960(Sensor, EasyResource):
-    MODEL: ClassVar[Model] = Model(
-        ModelFamily("hipsterbrown", "apds9960-sensor"), "apds9960"
-    )
+    MODEL: ClassVar[Model] = Model(ModelFamily("hipsterbrown", "sensor"), "apds9960")
 
     @classmethod
     def new(

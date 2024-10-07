@@ -1,9 +1,9 @@
 {
   "$schema": "https://dl.viam.dev/module.schema.json",
-  "module_id": "hipsterbrown:apds9960-sensor",
+  "module_id": "hipsterbrown:apds9960",
   "visibility": "public",
   "url": "",
-  "description": "Modular sensor component: apds9960",
+  "description": "Modular sensor component: apds9960 gesture, proxity, and color detection",
   "build": {
     "build": "mise run package",
     "path": "module.tar.gz",
@@ -15,7 +15,7 @@
   "models": [
     {
       "api": "rdk:component:sensor",
-      "model": "hipsterbrown:apds9960-sensor:apds9960"
+      "model": "hipsterbrown:sensor:apds9960"
     }
   ],
   "entrypoint": "./run.sh"
